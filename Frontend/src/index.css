@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*::-webkit-scrollbar{
+  display: none;
+}
+
+.input{
+  @apply bg-[#293038] text-white px-4 py-2 rounded-md outline-none w-full
+}
+
+.button{
+  @apply bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-400
+}
+
+.message{
+  @apply bg-zinc-700 px-6 py-2 w-fit rounded-lg text-lg
+}
+
+.msg-right{
+  @apply self-end
+}
+
+.msg-left{
+  @apply self-start
+}

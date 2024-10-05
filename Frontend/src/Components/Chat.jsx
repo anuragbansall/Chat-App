@@ -12,7 +12,7 @@ function Chat({ messages, message, sendMessage, setMessage, username }) {
   }, [messages]);
 
   return (
-    <div className='flex flex-col justify-between h-full px-12 gap-4'>
+    <div className='flex flex-col justify-between h-full md:px-12 gap-4'>
       <div className="flex flex-col gap-4 overflow-y-auto py-4 h-full">
         {messages.map((msg, index) => (
           <div
@@ -25,7 +25,7 @@ function Chat({ messages, message, sendMessage, setMessage, username }) {
         <div ref={messagesEndRef} />
       </div>
 
-      <form className="w-full flex gap-4" onSubmit={(event) => event.preventDefault()}>
+      <form className="w-full flex flex-col sm:flex-row gap-4" onSubmit={(event) => event.preventDefault()}>
         <input
           type="text"
           placeholder="Enter your message"
